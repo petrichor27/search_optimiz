@@ -56,7 +56,7 @@ class GradientMethod:
                 res = x2
                 break
         res.append(GradientMethod.fun(res))
-        text_result = "Координаты найденной точки\nминимума:\nx="+str(round(res[0],3))+"\ny="+str(round(res[1],3))+"\nz="+str(round(res[2],3))+"\nКоличество итераций = "+str(k)
+        text_result = "Координаты найденной точки\nминимума:\nx = "+str(round(res[0],3))+"\ny = "+str(round(res[1],3))+"\nf(x,y) = "+str(round(res[2],3))+"\nКоличество итераций = "+str(k)
         return res,text_result
 
     def graph(self):
